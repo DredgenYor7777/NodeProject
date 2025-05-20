@@ -1,0 +1,238 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#app {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.screen {
+    padding: 20px;
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* Login Styles */
+#login {
+    background-color: #f9f9f9;
+}
+
+.login-container {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#login-form {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#login-form h2 {
+    text-align: center;
+    color: #e44d26; /* Red */
+}
+
+#login-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#login-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e44d26; /* Red */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #333;
+}
+
+/* Register Styles */
+#register {
+    background-color: #f9f9f9;
+}
+
+#register-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+#register-form h2 {
+    text-align: center;
+    color: #e44d26; /* Red */
+}
+
+#register-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#register-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e44d26; /* Red */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register-form button:hover {
+    background-color: #333;
+}
+
+/* Main Styles */
+#main {
+    text-align: center;
+    padding: 50px; /* Increased padding for a larger interface */
+}
+
+.button-container {
+    margin-top: 40px; /* Increased margin for more spacing */
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increased gap between buttons */
+}
+
+.button-container button {
+    padding: 20px 40px; /* Increased padding for larger buttons */
+    font-size: 1.2em; /* Increased font size for better readability */
+    border: none;
+    border-radius: 4px;
+    background-color: #e44d26; /* Red */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #333;
+}
+
+#logout-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e44d26; /* Red */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#logout-button:hover {
+    background-color: #333;
+}
+
+/* Inventory Styles */
+#inventory {
+    padding: 20px;
+}
+
+#inventory h2 {
+    text-align: center;
+    color: #e44d26; /* Red */
+}
+
+#inventory-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#inventory-list th, #inventory-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#inventory-list th {
+    background-color: #f2f2f2;
+}
+
+#inventory button, #add-product-form button{
+        padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e44d26; /* Red */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+#inventory button:hover, #add-product-form button:hover{
+    background-color: #333;
+}
+
+/* Add Product Form Styles */
+#add-product-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#add-product-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* General Button Styles */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e44d26; /* Red */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}

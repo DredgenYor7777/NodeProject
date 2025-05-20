@@ -1,0 +1,90 @@
+.card-section {
+    background-color: #fd0d41;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* icono a la izquierda */
+    gap: 2rem; /* espacio entre icono e info */
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 2;
+    flex-shrink: 0; /* evita que se reduzca */
+}
+
+/* Contenido del texto */
+.card-content {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    color: #000;
+    z-index: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+    text-align: justify;     /* justificado */
+}
+
+/* Hover */
+.card-section:hover .card-icon {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.card-section:hover .card-content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+h2 {
+    backdrop-filter: blur(10px);
+    background-color: #d8e0ec; /* Fondo semitransparente para mejor efecto blur */
+    color: rgb(209, 14, 14);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2rem auto; /* Centrado horizontalmente */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease;
+    max-width: 600px; /* Limita el ancho */
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+.btn-back {
+    
+    display: inline-block;
+    background-color: #d8e0ec;
+    color: rgb(209, 14, 14);
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-back:hover {
+    background-color: #160802;
+}
+
+
+.btn-back:active {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
