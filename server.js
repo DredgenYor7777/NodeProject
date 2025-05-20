@@ -6,10 +6,10 @@ const path = require('path');
 
 // Configuración de conexión a MySQL
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'userleo',
-    password: '123456',
-    database: 'abarrotera'
+    host: 'sql206.infinityfree.com',
+    user: 'if0_38918086',
+    password: 'Lzqi422DlUQY1m',
+    database: 'if0_38918086_abarrotera'
 });
 
 connection.connect((err) => {
